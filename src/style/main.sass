@@ -1,0 +1,343 @@
+// default setting
+*,*:before, *after 
+  box-sizing: border-box
+ul 
+  list-style-type: none
+  padding: 0
+
+////////////////////////
+
+// all colors
+$color-btn: #B7EAAF
+$color-back: #213F36
+$color-gey: #EDEEF0
+$color-green-wave: rgb(0, 61, 50)
+// 
+body
+  margin: 0
+  font-family: Ubuntu, sans-serif
+  color: white
+  overflow-x: hidden
+  overflow-y: scroll
+
+  header
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: relative
+    height: 100vh
+    width: 100%
+    background-image: url("/Plant_shop/img/Background.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+  
+    nav 
+      position: fixed
+      width: 100%;
+      z-index: 9
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      font-weight: 600
+      font-size: 20px
+      transition: .5s
+
+      .logo
+        margin-left: 20px
+
+
+      
+
+      .main-ul
+        display: flex
+        align-items: center
+
+      .main-ul .hading-li
+        padding: 30px 0
+
+      .main-ul li
+        position: relative
+        margin-left: 30px
+
+      .main-ul li a
+        color: white
+        text-decoration: none
+        &:hover
+          color: $color-btn
+        
+
+      .main-ul li .dependent-ul
+        display: none
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        margin: 15px 0 0 0
+        text-align: center
+        border-radius: 20px
+        overflow: hidden
+
+      .main-ul .hading-li
+        &:hover .dependent-ul
+          display: block
+                   
+      .main-ul li .dependent-ul li
+        margin-left: 0
+        background-color: $color-back
+        width: 200px
+        padding: 15px 
+        transition: .3s
+        &:hover
+          background-color: $color-btn
+          color: $color-back
+
+
+      .main-ul li button
+        background-color: $color-btn 
+        border: none
+        padding: 10px
+        border-radius: 10px
+        font-weight: 600
+    section
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+      text-align: center
+      h1
+        font-size: 48px
+        text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25)
+        span
+          display: inline-block
+          color: $color-btn
+          font-size: 48px
+          font-weight: 700
+      span
+        display: block
+        font-size: 30px
+        font-weight: 300
+      
+      a
+        display: inline-block
+        color: white
+        background-color: black
+        border-radius: 20px
+        padding: 10px
+        margin-top: 5vh
+        border: 2px solid black
+        text-decoration: none
+        transition: .3s
+        &:hover
+          color: black
+          background-color: white
+          border: 2px solid black
+      
+    .selector
+      display: flex
+      justify-content: center
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+      width: 100%
+      margin-bottom: 5vh
+
+  section
+    
+    .select-plant
+      text-align: center
+      padding: 0 20px
+
+      a
+        display: inline-block
+        color: white
+        font-size: 24px
+        padding: 18px 53px
+        background-color: $color-back
+        border-radius: 40px
+        margin-top: 40px
+        text-decoration: none
+        border: 2px solid $color-back
+        transition: .3s
+        &:hover
+          color: $color-back
+          background-color: white
+          border: 2px solid $color-back
+      
+      h4
+        text-transform: uppercase
+        color: $color-btn
+        font-size: 18px
+        margin-top: 25px
+        margin-bottom: 40px
+      p
+        display: inline-block
+        color: black
+        max-width: 400px
+    
+    .suggest
+      padding: 0 20px
+      margin-bottom: 40px
+      
+      h2
+        text-align: center
+        color: $color-back
+        font-size: 60px
+
+      .cards 
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+        .item
+          display: inline-block
+          justify-content: space-between
+          flex-direction: column
+          overflow: hidden
+          border-radius: 30px
+          height: 30vh
+          width: 21vw
+          min-height: 225px
+          min-width: 300px
+          margin: 20px
+          background-repeat: no-repeat
+          background-size: cover
+          background-position: center
+          transition-property: background
+          transition: .3s
+          &:hover
+            transform: scale(1.1)
+
+
+          p
+            display: inline-block
+            font-size: 30px
+            margin-left: 25px
+
+        .picture-1
+          background-image: url("/Plant_shop/img/Rectangle 1.png")
+        
+        .picture-2
+          background-image: url("/Plant_shop/img/Rectangle 2.png")
+
+        .picture-3
+          background-image: url("/Plant_shop/img/Rectangle 3.png")
+
+        .picture-4
+          background-image: url("/Plant_shop/img/Rectangle 4.png")
+
+    .service
+      width: 100%
+      height: 90vh
+      background-color: $color-gey
+
+      .modal-service
+        position: relative
+        height: inherit
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &::after
+          position: absolute
+          top: 25%
+          left: 25%
+          content: ''
+          height: 100px
+          width: 100px
+          background-image: url("/Plant_shop/img/Vector 1.png")
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+          transition-property: background
+          animation: foliage 8s infinite linear
+        &::before
+          position: absolute
+          top: 60%
+          left: 60%
+          content: ''
+          height: 200px
+          width: 200px
+          background-image: url("/Plant_shop/img/Vector 4.png")
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+          transition-property: background
+          animation: foliage 8s infinite linear
+        h2
+          text-align: center
+          font-size: 200px
+          color: $color-back
+          margin: 0px
+          
+        p
+          color: $color-btn
+          text-align: center
+          font-size: 72px
+
+    .modal-location
+      text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: center
+      position: relative
+      left: 50%
+      width: 100vw
+      padding: 100px 0
+      transform: translateX(-50%)
+
+      background-color: $color-green-wave
+      
+      .logo img
+        width: 60px
+        height: 60px
+
+      h3
+        font-size: 60px
+        font-weight: 600 
+        color: $color-btn
+        margin: 10px 0
+      
+      p 
+        font-size: 24px
+
+      button
+        width: 260px
+        height: 60px
+        background: linear-gradient(90deg, rgba(127, 202, 33, 0.8) 0%, #105200 100%);
+        color: white
+        line-height: none
+        border: none
+        cursor: pointer
+        border-radius: 40px
+        font-size: 24px
+        transition: .5s
+        &:focus
+          outline: none
+
+      div
+        margin-top: 30px
+        font-size: 24px
+        span
+          font-family: Permanent Marker
+          font-size: 48px
+
+        
+
+@keyframes foliage
+  0%
+    transform: translateY(0px)
+  50%
+    transform: translateY(-100px)
+  100%
+    transform: translateY(0px)
+
+
+      
+
+
+        
+
+    
+
+
+      

@@ -1,0 +1,468 @@
+*, *:before, *after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Ubuntu, sans-serif;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/Plant_shop/img/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body header nav {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body header nav .logo {
+  margin-left: 20px;
+}
+
+body header nav .main-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav .main-ul .hading-li {
+  padding: 30px 0;
+}
+
+body header nav .main-ul li {
+  position: relative;
+  margin-left: 30px;
+}
+
+body header nav .main-ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body header nav .main-ul li a:hover {
+  color: #B7EAAF;
+}
+
+body header nav .main-ul li .dependent-ul {
+  display: none;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 15px 0 0 0;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+body header nav .main-ul .hading-li:hover .dependent-ul {
+  display: block;
+}
+
+body header nav .main-ul li .dependent-ul li {
+  margin-left: 0;
+  background-color: #213F36;
+  width: 200px;
+  padding: 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body header nav .main-ul li .dependent-ul li:hover {
+  background-color: #B7EAAF;
+  color: #213F36;
+}
+
+body header nav .main-ul li button {
+  background-color: #B7EAAF;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+body header section {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-align: center;
+}
+
+body header section h1 {
+  font-size: 48px;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+body header section h1 span {
+  display: inline-block;
+  color: #B7EAAF;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+body header section span {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+body header section a {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 5vh;
+  border: 2px solid black;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body header section a:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
+body header .selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+body section .select-plant {
+  text-align: center;
+  padding: 0 20px;
+}
+
+body section .select-plant a {
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  padding: 18px 53px;
+  background-color: #213F36;
+  border-radius: 40px;
+  margin-top: 40px;
+  text-decoration: none;
+  border: 2px solid #213F36;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body section .select-plant a:hover {
+  color: #213F36;
+  background-color: white;
+  border: 2px solid #213F36;
+}
+
+body section .select-plant h4 {
+  text-transform: uppercase;
+  color: #B7EAAF;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+body section .select-plant p {
+  display: inline-block;
+  color: black;
+  max-width: 400px;
+}
+
+body section .suggest {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+body section .suggest h2 {
+  text-align: center;
+  color: #213F36;
+  font-size: 60px;
+}
+
+body section .suggest .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section .suggest .cards .item {
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  border-radius: 30px;
+  height: 30vh;
+  width: 21vw;
+  min-height: 225px;
+  min-width: 300px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body section .suggest .cards .item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body section .suggest .cards .item p {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+body section .suggest .cards .picture-1 {
+  background-image: url("/Plant_shop/img/Rectangle 1.png");
+}
+
+body section .suggest .cards .picture-2 {
+  background-image: url("/Plant_shop/img/Rectangle 2.png");
+}
+
+body section .suggest .cards .picture-3 {
+  background-image: url("/Plant_shop/img/Rectangle 3.png");
+}
+
+body section .suggest .cards .picture-4 {
+  background-image: url("/Plant_shop/img/Rectangle 4.png");
+}
+
+body section .service {
+  width: 100%;
+  height: 90vh;
+  background-color: #EDEEF0;
+}
+
+body section .service .modal-service {
+  position: relative;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section .service .modal-service::after {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  content: '';
+  height: 100px;
+  width: 100px;
+  background-image: url("/Plant_shop/img/Vector 1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-animation: foliage 8s infinite linear;
+          animation: foliage 8s infinite linear;
+}
+
+body section .service .modal-service::before {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  content: '';
+  height: 200px;
+  width: 200px;
+  background-image: url("/Plant_shop/img/Vector 4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-animation: foliage 8s infinite linear;
+          animation: foliage 8s infinite linear;
+}
+
+body section .service .modal-service h2 {
+  text-align: center;
+  font-size: 200px;
+  color: #213F36;
+  margin: 0px;
+}
+
+body section .service .modal-service p {
+  color: #B7EAAF;
+  text-align: center;
+  font-size: 72px;
+}
+
+body section .modal-location {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  padding: 100px 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #003d32;
+}
+
+body section .modal-location .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+body section .modal-location h3 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #B7EAAF;
+  margin: 10px 0;
+}
+
+body section .modal-location p {
+  font-size: 24px;
+}
+
+body section .modal-location button {
+  width: 260px;
+  height: 60px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(127, 202, 33, 0.8)), to(#105200));
+  background: linear-gradient(90deg, rgba(127, 202, 33, 0.8) 0%, #105200 100%);
+  color: white;
+  line-height: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 24px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body section .modal-location button:focus {
+  outline: none;
+}
+
+body section .modal-location div {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+body section .modal-location div span {
+  font-family: Permanent Marker;
+  font-size: 48px;
+}
+
+@-webkit-keyframes foliage {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes foliage {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+$color-btn: #B7EAAF
+$color-back: #213F36
+$color-gey: #EDEEF0
+  
+.wave
+  width: 100%
+  overflow: hidden
+  position: relative
+  top: -210px
+  .grey
+    background-color: $color-gey
+
+.under
+  top: 0
+
+
+.wave__one
+  background: url("../../img/wave_green.png")   repeat-x
+  opacity: .7
+  width: 7000px
+  height: 218px
+  animation: waves 15s infinite linear
+  position: absolute
+  top: 0
+  transition: .5s
+
+.wave__one__new 
+  background: url("../../img/wave_so_green.png") repeat-x
+  opacity: .7
+
+
+.wave__two
+  background: url("../../img/wave.png") repeat-x
+  width: 7000px
+  height: 218px
+  animation: waves 10s infinite linear
+  position: relative
+  top: 0
+
+.wave__green
+  background: url("../../img/wave_so_green.png") repeat-x
+  width: 7000px
+  height: 218px
+  animation: waves 10s infinite linear
+  position: relative
+  top: 0 
+
+
+
+
+
+.revert 
+  transform: rotateX(180deg)
+  top: 0
+
+
+@keyframes waves
+  0%
+    margin-left: 0
+  100%
+    margin-left: -1938px
