@@ -75,15 +75,9 @@
   }
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 body {
   margin: 0;
   font-family: Ubuntu, sans-serif;
-  color: white;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -130,6 +124,11 @@ body header nav {
   font-size: 20px;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+body header nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 body header nav .logo {
@@ -212,6 +211,7 @@ body header section {
 body header section h1 {
   font-size: 48px;
   text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  color: white;
 }
 
 body header section h1 span {
@@ -225,6 +225,7 @@ body header section span {
   display: block;
   font-size: 30px;
   font-weight: 300;
+  color: white;
 }
 
 body header section a {
@@ -356,6 +357,8 @@ body section .suggest .cards .item p {
   display: inline-block;
   font-size: 30px;
   margin-left: 25px;
+  color: white;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 body section .suggest .cards .picture-1 {
@@ -477,6 +480,7 @@ body section .modal-location h3 {
 
 body section .modal-location p {
   font-size: 24px;
+  color: #fff;
 }
 
 body section .modal-location button {
@@ -501,11 +505,13 @@ body section .modal-location button:focus {
 body section .modal-location div {
   margin-top: 30px;
   font-size: 24px;
+  color: white;
 }
 
 body section .modal-location div span {
   font-family: Permanent Marker;
   font-size: 48px;
+  color: white;
 }
 
 @-webkit-keyframes foliage {
@@ -536,5 +542,9 @@ body section .modal-location div span {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
+}
+
+.container {
+  color: #213F36;
 }
 /*# sourceMappingURL=main.css.map */

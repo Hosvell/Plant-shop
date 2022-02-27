@@ -1,11 +1,13 @@
 @media screen and (max-width: 1200px) {
   .container {
+    padding: 0 250px;
     width: 1140px;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .container {
+    padding: 0 150px;
     width: 960px;
   }
 }
