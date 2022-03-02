@@ -1,17 +1,46 @@
-// adaptive navber onsroll
+// adaptive navbar onsroll and work wave
 window.onscroll = function () {
   scrollFunction()
 }
 
+const navbar = document.querySelector('#navbar')
+const wave = document.querySelector('#wave__one')
+const miniCart = document.querySelector('#mini-cart')
+
 function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.getElementById('navbar').style.background = 'rgb(0, 0, 0, 0.8)'
-    document.getElementById('navbar').style.height = '8vh'
-    document.getElementById('wave__one').classList.add('wave__one__new')
+    navbar.style['background'] = 'rgb(0, 0, 0, 0.8)'
+    navbar.style['height'] = '8vh'
+    navbar.style['backdrop-filter'] = 'blur(5px)'
+    wave.classList.add('wave__one__new')
+    miniCart.style['background'] = 'rgba(170, 170, 170, 0)'
+
   } else {
-    document.getElementById('navbar').style.background = ''
-    document.getElementById('navbar').style.height = '12vh'
-    document.getElementById('wave__one').classList.remove('wave__one__new')
-    document.getElementById('wave__one').classList.add('.wave__one')
+    navbar.style['background'] = ''
+    navbar.style['height'] = '12vh'
+    navbar.style['backdrop-filter'] = 'none'
+    wave.classList.remove('wave__one__new')
+    wave.classList.add('.wave__one')
+    miniCart.style['background'] = 'rgba(170, 170, 170, 0.4)'
   }
 }
+
+// selector product item
+window.addEventListener('click', (event) => {
+
+  if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
+    const counterWrapper =  event.target.closest('.counter-wrapper')
+    const counter = counterWrapper.querySelector('[data-counter]')
+
+    if (event.target.dataset.action === 'plus') {
+      counter.innerText++
+    }
+
+    if (event.target.dataset.action === 'minus') {
+      if (parseInt(counter.innerText) > 1) {
+        counter.innerText--
+      }
+    }
+  }
+  
+})
