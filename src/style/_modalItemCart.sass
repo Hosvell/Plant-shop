@@ -1,0 +1,112 @@
+.modal-cart
+  position: fixed
+  z-index: 99
+  right: 0
+  bottom: 0
+  background: rgba(170, 170, 170, 0.3)
+  backdrop-filter: blur(25px)
+  margin-bottom: 20px
+  margin-right: 20px
+  border-radius: 20px
+  .close-btn
+    background: none
+    border: none
+    cursor: pointer
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    margin: 15px 0
+  .item-product-list
+    overflow-y: scroll
+    max-height: 350px
+    margin-right: 50px
+    &::-webkit-scrollbar
+      width: 8px
+    &::-webkit-scrollbar-thumb
+      background: #aaa
+      border-radius: 8px
+    .wrapper-item-cart
+      display: flex
+      align-items: center
+      margin: 30px 0
+      &:first-child
+        margin-top: 10px
+
+      .img-product
+        display: inline-block
+
+        width: 90px
+        height: 90px
+        border-radius: 10px
+        overflow: hidden
+        position: relative
+        left: 60px
+      .wrapper-item-prod
+        float: right
+        width: 180px
+        // height: 150px
+        // border: 2px solid black
+        background-color: #fff
+        border-radius: 15px
+        padding: 30px 20px 30px 80px
+        margin-right: 10px
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
+        .name-prod
+          font-size: 24px
+        .price-prod
+          font-size: 24px
+          color: $color-btn
+        .wrapper-quantity-remove
+          display: flex
+          margin-top: 10px
+          .items-selector-m
+            display: flex
+            align-items: center
+            font-size: 18px
+            padding-right: 10px
+            user-select: none
+            .items__control-m
+              width: 20px
+              text-align: center
+              border-radius: 50%
+              cursor: pointer
+              transition: .3s
+              &:hover
+                background-color: $color-btn
+            .items__current-m
+              margin: 0 5px
+
+          .btn-black
+            background-color: #000
+            color: white
+            border: none
+            cursor: pointer
+            padding-bottom: 3px
+            border-radius: 5px
+  .wrapper-price-order
+    display: inline-flex
+    align-items: center
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    margin-top: 15px
+    margin-bottom: 25px
+    margin-left: 15px
+
+    .summury-price
+      background-color: #000
+      color: white
+      font-size: 24px
+      padding: 5px 30px 5px 15px
+      border-radius: 10px 0 0 10px
+    .btn-white
+      display: inline-flex
+      align-items: center
+      background-color: #fff
+      border: none
+      padding: 7px 20px
+      border-radius: 10px
+      position: relative
+      left: -15px
+      img
+        margin-right: 5px
