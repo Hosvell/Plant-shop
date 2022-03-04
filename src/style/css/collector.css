@@ -506,14 +506,11 @@ body section .modal-location div span {
   border: 1px solid #000;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 18px;
 }
 .btn-order img {
   width: 30px;
-}
-.btn-order p {
-  margin: 0;
-  margin-left: 5px;
-  font-size: 18px;
+  margin-right: 5px;
 }
 
 .items-selector {
@@ -600,6 +597,9 @@ body section .modal-location div span {
   overflow: hidden;
   position: relative;
   left: 60px;
+}
+.modal-cart .item-product-list .wrapper-item-cart .img-product img {
+  height: 100%;
 }
 .modal-cart .item-product-list .wrapper-item-cart .wrapper-item-prod {
   float: right;

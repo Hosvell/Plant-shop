@@ -100,8 +100,8 @@
         <div class="product-grid">
           <div class="item-grid">
 
-            <div class="item-product">
-              <img src="/img/img_product/image 12.png" alt="">
+            <div class="item-product" data-id="01">
+              <img class="prod-img" src="/img/img_product/oak.png" alt="">
               <div class="content">
                 <div class="name-product">Oak</div>
                 <div class="description">potted plant, 24cm</div>
@@ -111,17 +111,16 @@
                     <div class="items__current" data-counter>1</div>
                     <div class="items__control" data-action="plus">+</div>
                   </div>                  
-                  <div class="price">Price by <span>$12.99</span></div>
+                  <div class="price">Price by $ <span class="price-current">12.99</span></div>
                 </div>
-                  <button class="btn-order">
-                    <img src="/img/icon/io3.png" alt="">
-                    <p>Order</p>
+                  <button data-cart type="button" class="btn-order">
+                    <img src="/img/icon/io3.png" alt="">Order
                   </button>
               </div>
             </div>
 
-            <div class="item-product">
-              <img src="/img/img_product/lipa.png" alt="">
+            <div class="item-product" data-id="02">
+              <img class="prod-img" src="/img/img_product/lipa.png" alt="">
               <div class="content">
                 <div class="name-product">Lipa</div>
                 <div class="description">potted plant, 24cm</div>
@@ -131,17 +130,16 @@
                     <div class="items__current" data-counter>1</div>
                     <div class="items__control" data-action="plus">+</div>
                   </div>                  
-                  <div class="price">Price by <span>$8.99</span></div>
+                  <div class="price">Price by $ <span class="price-current">8.99</span></div>
                 </div>
-                  <button class="btn-order">
-                    <img src="/img/icon/io3.png" alt="">
-                    <p>Order</p>
+                  <button data-cart type="button" class="btn-order">
+                    <img src="/img/icon/io3.png" alt="">Order
                   </button>
               </div>
             </div>
 
-            <div class="item-product">
-              <img src="/img/img_product/birch.png" alt="">
+            <div class="item-product" data-id="03">
+              <img class="prod-img" src="/img/img_product/birch.png" alt="">
               <div class="content">
                 <div class="name-product">Birch</div>
                 <div class="description">potted plant, 32cm</div>
@@ -151,17 +149,16 @@
                     <div class="items__current" data-counter>1</div>
                     <div class="items__control" data-action="plus">+</div>
                   </div>                  
-                  <div class="price">Price by <span>$16.99</span></div>
+                  <div class="price">Price by $ <span class="price-current">16.99</span></div>
                 </div>
-                  <button class="btn-order">
-                    <img src="/img/icon/io3.png" alt="">
-                    <p>Order</p>
+                  <button data-cart type="button" class="btn-order">
+                    <img src="/img/icon/io3.png" alt="">Order
                   </button>
               </div>
             </div>
 
-            <div class="item-product">
-              <img src="/img/img_product/aspen.png" alt="">
+            <div class="item-product" data-id="04">
+              <img class="prod-img" src="/img/img_product/aspen.png" alt="">
               <div class="content">
                 <div class="name-product">Aspen</div>
                 <div class="description">potted plant, 12cm</div>
@@ -171,12 +168,11 @@
                     <div class="items__current" data-counter>1</div>
                     <div class="items__control" data-action="plus">+</div>
                   </div>                  
-                  <div class="price">Price by <span>$3.99</span></div>
+                  <div class="price">Price by $ <span class="price-current">3.99</span></div>
                 </div>
-                  <button class="btn-order">
-                    <img src="/img/icon/io3.png" alt="">
-                    <p>Order</p>
-                  </button>
+                  <button data-cart type="button" class="btn-order">
+                    <img src="/img/icon/io3.png" alt="">Order
+                  </button> 
               </div>
             </div>
 
@@ -196,77 +192,15 @@
       </div>
     </section>
 
+ 
+
 <!-- modal-cart-window  -->
     <div class="modal-cart" id="modal-cart">
       <button class="close-btn" id="close-modal-cart"><img src="/img/icon/Closed.png" alt=""></button>
-      <div class="item-product-list" id="item-product-list">
-
-        <div class="wrapper-item-cart">
-          <div class="img-product"><img src="/img/image 15.png" alt=""></div>
-          <div class="wrapper-item-prod">
-            <div class="name-prod">Lipa</div>
-            <div class="price-prod">Price by <span>8.99</span></div>
-
-            <div class="wrapper-quantity-remove">
-
-              <div class="items-selector-m counter-wrapper">
-                <div class="items__control-m" data-action="minus">-</div>
-                <div class="items__current-m" data-counter>1</div>
-                <div class="items__control-m" data-action="plus">+</div>
-              </div>
-
-              <button class="btn-black" id="remove-btn">remove</button>
-
-            </div> 
-          </div>
-        </div> 
-
-        <div class="wrapper-item-cart">
-          <div class="img-product"><img src="/img/image 15.png" alt=""></div>
-          <div class="wrapper-item-prod">
-            <div class="name-prod">Lipa</div>
-            <div class="price-prod">Price by <span>18.99</span></div>
-
-            <div class="wrapper-quantity-remove">
-
-              <div class="items-selector-m counter-wrapper">
-                <div class="items__control-m" data-action="minus">-</div>
-                <div class="items__current-m" data-counter>1</div>
-                <div class="items__control-m" data-action="plus">+</div>
-              </div>
-
-              <button class="btn-black" id="remove-btn">remove</button>
-
-            </div> 
-          </div>
-        </div> 
-
-        <div class="wrapper-item-cart">
-          <div class="img-product"><img src="/img/image 15.png" alt=""></div>
-          <div class="wrapper-item-prod">
-            <div class="name-prod">Lipa</div>
-            <div class="price-prod">Price by <span>8.99</span></div>
-
-            <div class="wrapper-quantity-remove">
-
-              <div class="items-selector-m counter-wrapper">
-                <div class="items__control-m" data-action="minus">-</div>
-                <div class="items__current-m" data-counter>1</div>
-                <div class="items__control-m" data-action="plus">+</div>
-              </div>
-
-              <button class="btn-black" id="remove-btn">remove</button>
-
-            </div> 
-          </div>
-        </div> 
-
-        
-
-      </div>
+      <div class="item-product-list" id="item-product-list"></div>
       
       <div class="wrapper-price-order">
-        <div class="summury-price">$25.98</div>
+        <div class="summury-price" data-summury-price>0</div>
         <button class="btn-white"><img src="/img/icon/io3.png" alt="">place an order</button>
       </div>
     </div>
