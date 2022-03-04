@@ -25,7 +25,7 @@ function scrollFunction() {
   }
 }
 
-// selector product item
+// quantuty selector product item
 window.addEventListener('click', (event) => {
 
   if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
