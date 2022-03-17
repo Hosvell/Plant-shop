@@ -1,6 +1,5 @@
 const cartWrapper = document.querySelector('.item-product-list')
 
-
 window.addEventListener('click', (event) => {
 
   // проверяем, что клик был словершен по кнопке "order"

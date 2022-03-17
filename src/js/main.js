@@ -34,17 +34,16 @@ window.addEventListener('click', (event) => {
 
     if (event.target.dataset.action === 'plus') {
       counter.innerText++
+      console.log(counter.innerText);
     }
 
     if (event.target.dataset.action === 'minus') {
       if (parseInt(counter.innerText) > 1) {
         counter.innerText--
-      }
+      }y
     }
+    
   }
   
 })
-
-// modal-cart-window 
-
 
